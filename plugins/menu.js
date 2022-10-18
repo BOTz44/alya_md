@@ -171,8 +171,8 @@ exports.run = {
 ◦  ${isPrefix}runtime`
       client.sendMessageModify(m.chat, captions, m, {
                largeThumb: true,
-               thumbnail: await Func.fetchBuffer('https://telegra.ph/file/f8a923158032e0e6b6eb9.jpg'),
-               url: 'https://chat.whatsapp.com/JjwfWvDBTQS0j9fAUOyLMA'
+               thumbnail: await Func.fetchBuffer('https://telegra.ph/file/9f9965ea19fbd73582747.jpg'),
+               url: 'https://chat.whatsapp.com/CmJkktfVp0H2Gl4v11VOLW'
             })
       } catch (e) {
          client.reply(m.chat, Func.jsonFormat(e), m)
