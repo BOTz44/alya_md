@@ -33,8 +33,8 @@ module.exports = (m) => {
       let group = global.db.groups[m.chat]
       if (group) {
          if (!isNumber(group.activity)) group.activity = 0
-         if (!('autoread' in group)) group.autoread = true
-         if (!('antidelete' in group)) group.antidelete = true
+         if (!('autoread' in group)) group.autoread = false
+         if (!('antidelete' in group)) group.antidelete = false
          if (!('antilink' in group)) group.antilink = true
          if (!('antivirtex' in group)) group.antivirtex = true
          if (!('filter' in group)) group.filter = false
@@ -50,8 +50,8 @@ module.exports = (m) => {
       } else {
          global.db.groups[m.chat] = {
             activity: 0,
-            autoread: true,
-            antidelete: true,
+            autoread: false,
+            antidelete: false,
             antilink: false,
             antivirtex: false,
             filter: false,
@@ -89,8 +89,8 @@ module.exports = (m) => {
       if (!('error' in setting)) setting.error = []
       if (!('pluginDisable' in setting)) setting.pluginDisable = []
       if (!('groupmode' in setting)) setting.groupmode = false
-      if (!('sk_pack' in setting)) setting.sk_pack = 'Sticker'
-      if (!('sk_author' in setting)) setting.sk_author = '@neoxrs'
+      if (!('sk_pack' in setting)) setting.sk_pack = 'Sticker Qynzuu'
+      if (!('sk_author' in setting)) setting.sk_author = 'Armand'
       if (!('self' in setting)) setting.self = false
       if (!('mimic' in setting)) setting.mimic = []
       if (!('multiprefix' in setting)) setting.multiprefix = true
@@ -98,8 +98,8 @@ module.exports = (m) => {
       if (!('toxic' in setting)) setting.toxic = ["ajg", "ajig", "anjas", "anjg", "anjim", "anjing", "anjrot", "anying", "asw", "autis", "babi", "bacod", "bacot", "bagong", "bajingan", "bangsad", "bangsat", "bastard", "bego", "bgsd", "biadab", "biadap", "bitch", "bngst", "bodoh", "bokep", "cocote", "coli", "colmek", "comli", "dajjal", "dancok", "dongo", "fuck", "gelay", "goblog", "goblok", "guoblog", "guoblok", "hairul", "henceut", "idiot", "itil", "jamet", "jancok", "jembut", "jingan", "kafir", "kanjut", "kanyut", "keparat", "kntl", "kontol", "lana", "loli", "lont", "lonte", "mancing", "meki", "memek", "ngentod", "ngentot", "ngewe", "ngocok", "ngtd", "njeng", "njing", "njinx", "oppai", "pantek", "pantek", "peler", "pepek", "pilat", "pler", "pornhub", "pucek", "puki", "pukimak", "redhub", "sange", "setan", "silit", "telaso", "tempek", "tete", "titit", "toket", "tolol", "tomlol", "tytyd", "wildan", "xnxx"]
       if (!('online' in setting)) setting.online = true
       if (!('onlyprefix' in setting)) setting.onlyprefix = '+'
-      if (!('owners' in setting)) setting.owners = ['6285887776722', '994408364923']
-      if (!('msg' in setting)) setting.msg = 'An automated system (WhatsApp Bot) that can help to do something, search and get data / information only through WhatsApp.\n\n◦ *Database* : PostgreSQL\n◦ *Library* : Baileys v4.3.0\n◦ *Rest API* : https://api.neoxr.my.id\n◦ *Source* : https://github.com/neoxr/neoxr-bot\n\nIf you find an error or want to upgrade premium plan contact the owner.'
+      if (!('owners' in setting)) setting.owners = ['6287823406145', '6287823406145']
+      if (!('msg' in setting)) setting.msg = 'An automated system (WhatsApp Bot) that can help to do something, search and get data / information only through WhatsApp.\n\n◦ *Database* : MongoDB\n◦ *Library* : Baileys v4.3.0\n◦ *Rest API* : https://api.neoxr.my.id\n◦ *Instagram* : https://instagram.com/armnd.at\n\nIf you find an error or want to upgrade premium plan contact the owner.'
    } else {
       global.db.setting = {
          autodownload: true,
@@ -108,8 +108,8 @@ module.exports = (m) => {
          error: [],
          pluginDisable: [],
          groupmode: false,
-         sk_pack: 'Sticker',
-         sk_author: '@neoxrs',
+         sk_pack: 'Sticker Qynzuu',
+         sk_author: 'Armand',
          self: false,
          mimic: [],
          multiprefix: true,
@@ -117,8 +117,8 @@ module.exports = (m) => {
          toxic: ["ajg", "ajig", "anjas", "anjg", "anjim", "anjing", "anjrot", "anying", "asw", "autis", "babi", "bacod", "bacot", "bagong", "bajingan", "bangsad", "bangsat", "bastard", "bego", "bgsd", "biadab", "biadap", "bitch", "bngst", "bodoh", "bokep", "cocote", "coli", "colmek", "comli", "dajjal", "dancok", "dongo", "fuck", "gelay", "goblog", "goblok", "guoblog", "guoblok", "hairul", "henceut", "idiot", "itil", "jamet", "jancok", "jembut", "jingan", "kafir", "kanjut", "kanyut", "keparat", "kntl", "kontol", "lana", "loli", "lont", "lonte", "mancing", "meki", "memek", "ngentod", "ngentot", "ngewe", "ngocok", "ngtd", "njeng", "njing", "njinx", "oppai", "pantek", "pantek", "peler", "pepek", "pilat", "pler", "pornhub", "pucek", "puki", "pukimak", "redhub", "sange", "setan", "silit", "telaso", "tempek", "tete", "titit", "toket", "tolol", "tomlol", "tytyd", "wildan", "xnxx"],
          online: true,
          onlyprefix: '+',
-         owners: ['6285887776722', '994408364923'],
-         msg: 'An automated system (WhatsApp Bot) that can help to do something, search and get data / information only through WhatsApp.\n\n◦ *Database* : PostgreSQL\n◦ *Library* : Baileys v4.4.0\n◦ *Rest API* : https://api.neoxr.my.id\n◦ *Source* : https://github.com/neoxr/neoxr-bot\n\nIf you find an error or want to upgrade premium plan contact the owner.'     
+         owners: ['6287823406145', '6287823406145'],
+         msg: 'An automated system (WhatsApp Bot) that can help to do something, search and get data / information only through WhatsApp.\n\n◦ *Database* : MongoDB\n◦ *Library* : Baileys v4.4.0\n◦ *Rest API* : https://api.neoxr.my.id\n◦ *Instagram* : https://instagram.com/armnd.at\n\nIf you find an error or want to upgrade premium plan contact the owner.'     
       }
    }
 }
