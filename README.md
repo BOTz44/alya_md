@@ -2,7 +2,7 @@ Module : https://www.mediafire.com/file/lr792u729liv5qp/archive-2022-07-09T06260
 <p align="center">
     <img src="https://telegra.ph/file/eaabc97cb81180be2c9a6.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
-<h1 align="center">KannaBOT - MD</h1>
+<h1 align="center">ALYA - MD</h1>
 <p align="center">
   <a href="https://github.com/ImYanXiao"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=Kanna+BOT+Multi+Device;Base+ori+by+BochilGaming;Recode+By+YanXiao;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="ʘᴗʘ">
 </p>
