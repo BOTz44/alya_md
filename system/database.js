@@ -53,7 +53,7 @@ module.exports = (m) => {
             autoread: false,
             antidelete: false,
             antilink: false,
-            antivirtex: false,
+            antivirtex: true,
             filter: false,
             left: false,
             localonly: false,
